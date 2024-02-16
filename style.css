@@ -1,0 +1,40 @@
+body {
+    background-image: url('background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #343a40;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Make sure the body covers the entire viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Added to align content vertically */
+    position: relative; /* Added to create a containing block for absolute positioning */
+}
+
+.container {
+    text-align: center;
+    margin-top: 100px; /* Adjust as needed */
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+h1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 10px 0; /* Adjust as needed */
+    z-index: 100; /* Ensure the heading stays above other content */
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+}
